@@ -5,8 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // The 'base' property should be here, at the top level
+  base: '/my-portfolio-new/',
+
   server: {
-    base: 'my-portfolio-new',
     host: "::",
     port: 8080,
   },
