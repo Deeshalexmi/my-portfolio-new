@@ -80,19 +80,14 @@ const Hero = () => {
               <Eye className="mr-2" size={20} />
               View My Work
             </Button>
-            <a
-              href="https://raw.githubusercontent.com/Deeshalexmi/my-portfolio-assets/main/Deeshalexmi_Resume.pdf"
-              download="Deeshalexmi_Resume.pdf"
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-orange text-orange hover:bg-orange hover:text-primary-foreground font-semibold px-8 py-6 text-lg"
             >
-              <Button
-                variant='outline'
-                size='lg'
-                className='border-orange text-orange hover:bg-orange hover:text-primary-foreground font-semibold px-8 py-6 text-lg'
-              >
-                <Download className='mr-2' size={20} />
-                Download Resume
-              </Button>
-            </a>
+              <Download className="mr-2" size={20} />
+              Download Resume
+            </Button>
           </div>
 
           {/* Scroll Indicator */}
