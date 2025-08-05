@@ -7,8 +7,13 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: mode === "development" ? "/" : "/my-portfolio-new",
   server: {
+    base: '/my-portfolio-new',
     host: "::",
     port: 8080,
+  },
+
+  build: {
+    outDir: 'docs'
   },
   plugins: [
     react(),
